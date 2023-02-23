@@ -29,7 +29,20 @@ namespace LinkedList
             }
 
         }
-       
+        public void Display()
+        {
+            Node temp = this.head;
+            if (temp != null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            Console.WriteLine("LinkedList is :");
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + "");
+                temp = temp.next;
+            }
+        }
 
     }
 }

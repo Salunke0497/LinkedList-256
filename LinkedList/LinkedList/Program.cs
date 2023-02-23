@@ -23,9 +23,15 @@ namespace LinkedList
                          linked.Add(30);
                          linked.Add(70);
                         break;
+
                     case 2:
+                        linked.Display();
+                        break;
+
+                    case 3:
                         flag = false;
                         break;
+
                     default:
                         break;
                 }
