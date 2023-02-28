@@ -42,5 +42,16 @@ namespace LinkedList
             }
 
         }
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine(" Stack is empty ");
+                return;
+            }
+            Console.WriteLine("Value Poped is {0}", this.top.data);
+            this.top = this.top.next;
+
+        }
     }
 }

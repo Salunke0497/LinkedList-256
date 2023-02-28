@@ -67,8 +67,16 @@ namespace LinkedList
                         stack.Push(30);
                         stack.Displaystack();
                         break;
+                    case 10:
+                        stack.Push(10);
+                        stack.Push(20);
+                        stack.Push(30);
+                        stack.Pop();
+                        stack.Displaystack();
+                        break;
+
                     default:
-                            break;
+                                break;
                 }
                 Console.ReadLine();
         }
