@@ -43,9 +43,13 @@ namespace LinkedList
                         linked.RemoveLastNode();
                         linked.Display();
                         break;
-                     default:
-
+                    case 5:
+                        linked.SerchValue(70);  //for serch value
+                        linked.Display();
                         break;
+                    default:
+
+                            break;
                 }
                 Console.ReadLine();
         }

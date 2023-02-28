@@ -100,6 +100,33 @@ namespace LinkedList
                 Console.WriteLine("LinkedList last element is deleted");
             }
         }
+        //For search value from the linked list
+        public void SerchValue(int data)
+        {
+            bool doesExist = false;
+            if (head != null)
+            {
+                int count = 0;
+                Node temp = head;
+                while (temp != null)
+                {
+                    if (temp.data == data)
+                    {
+                        doesExist = true;
+                        count++;
+                    }
+                    temp = temp.next;
+                }
+                if (doesExist)
+                {
+                    Console.WriteLine("{0} data >>>>> count {1}", data, count);
+                }
+                else
+                {
+                    Console.WriteLine(data + " is not present into the LinkedList");
+                }
+            }
+        }
     }
 }
 
