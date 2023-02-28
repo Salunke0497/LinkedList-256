@@ -101,6 +101,7 @@ namespace LinkedList
             }
         }
         //For search value from the linked list
+        //UC5
         public void SerchValue(int data)
         {
             bool doesExist = false;
@@ -127,6 +128,25 @@ namespace LinkedList
                 }
             }
         }
+        //for checking size of linked list
+        //UC6
+        public void Size()
+        {
+            Node temp = head;
+            int count = 0;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + "");
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine(count);
+        }
+
     }
 }
 

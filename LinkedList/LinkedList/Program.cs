@@ -22,34 +22,39 @@ namespace LinkedList
                     case 1:
                         linked.Add(56);
                         linked.Add(30);   //for add method 
-                        linked.Add(70);
+                        linked.Add(70);   //UC1
                         break;
 
                     case 2:
                         linked.Reverse(70);
                         linked.Reverse(30); // for reverse method
-                        linked.Reverse(56);
+                        linked.Reverse(56); //UC2
                         break;
                     case 3:
                         linked.Add(56);
                         linked.Add(30); //fpr remove first node method 
-                        linked.Add(70);
+                        linked.Add(70); //UC3
                         linked.RemoveFirstNode();
                         break;
                     case 4:
                         linked.Add(56);
                         linked.Add(30); // for remove last node method
-                        linked.Add(70);
+                        linked.Add(70); //UC4
                         linked.RemoveLastNode();
                         linked.Display();
                         break;
                     case 5:
                         linked.SerchValue(70);  //for serch value
-                        linked.Display();
+                        linked.Display();       //UC5
+                        break;
+                    case 6:
+                        linked.Add(56);
+                        linked.Add(30);    //for checking the size of LinkedList
+                        linked.Add(70);   //UC6
+                        linked.Size();
                         break;
                     default:
-
-                            break;
+                        break;
                 }
                 Console.ReadLine();
         }
