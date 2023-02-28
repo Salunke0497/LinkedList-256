@@ -30,11 +30,16 @@ namespace LinkedList
                         linked.Reverse(30); // for reverse method
                         linked.Reverse(56);
                         break;
+                    case 3:
+                        linked.Add(56);
+                        linked.Add(30); //fpr remove first node method 
+                        linked.Add(70);
+                        linked.RemoveFirstNode();
+                        break;
 
-                   
                     default:
 
-                        break;
+                            break;
                 }
                 Console.ReadLine();
         }
