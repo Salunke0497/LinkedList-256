@@ -27,7 +27,20 @@ namespace LinkedList
                 this.top = node;
                 Console.WriteLine(value);
         }
-       
+        public void Displaystack()
+        {
+            Node temp = this.top;
+            if (temp == null)
+            {
+                Console.WriteLine("stack is empty ");
+            }
+            Console.WriteLine("Stack is : ");
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data);
+                temp = temp.next;
+            }
 
+        }
     }
 }

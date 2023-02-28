@@ -56,6 +56,17 @@ namespace LinkedList
                     case 7:
                         linked.Display(); // for display the linked list
                         break;
+                    case 8:
+                        stack.Push(10); //for add value into stack
+                        stack.Push(20);
+                        stack.Push(30);
+                            break;
+                    case 9:
+                        stack.Push(10);
+                        stack.Push(20);
+                        stack.Push(30);
+                        stack.Displaystack();
+                        break;
                     default:
                             break;
                 }
