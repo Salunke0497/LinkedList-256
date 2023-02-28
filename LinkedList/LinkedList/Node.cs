@@ -14,5 +14,10 @@ namespace LinkedList
         {
             this.data = data;
         }
+        //public Node(int Data,Node next)
+        //{
+        //    this.data = Data;
+        //}
+
     }
 }
