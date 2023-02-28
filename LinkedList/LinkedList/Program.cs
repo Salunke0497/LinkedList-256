@@ -36,10 +36,16 @@ namespace LinkedList
                         linked.Add(70);
                         linked.RemoveFirstNode();
                         break;
+                    case 4:
+                        linked.Add(56);
+                        linked.Add(30); // for remove last node method
+                        linked.Add(70);
+                        linked.RemoveLastNode();
+                        linked.Display();
+                        break;
+                     default:
 
-                    default:
-
-                            break;
+                        break;
                 }
                 Console.ReadLine();
         }

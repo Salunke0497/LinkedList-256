@@ -78,8 +78,6 @@ namespace LinkedList
                 Console.WriteLine("LinkedList first element is deleted");
             }           
         }
-
-
         //for last node for Method UC4
         public void RemoveLastNode()
         {
@@ -101,50 +99,6 @@ namespace LinkedList
                 lastNode.next = null;
                 Console.WriteLine("LinkedList last element is deleted");
             }
-        }
-
-        public void SerchValue(int data)
-        {
-            bool doesExist = false;
-            if(head !=null)
-            {
-                int count = 0;
-                Node temp = head;
-                while (temp != null) 
-                {
-                    if(temp.data == data)
-                    {
-                        doesExist = true;
-                        count++;
-                    }
-                    temp = temp.next;
-                }
-                if (doesExist)
-                {
-                    Console.WriteLine("{0} data >>>>> count {1}", data,count);
-                }
-                else
-                {
-                    Console.WriteLine(data + " is not present into the LinkedList");
-                }
-            }           
-        }
-        public void Size()
-        {
-            Node temp = head;
-            int count = 0;
-            if(temp == null)
-            {
-                Console.WriteLine("LinkedList is empty");
-            }
-            while(temp != null)
-            {
-                Console.WriteLine(temp.data +"");
-                temp = temp.next;
-                count++;
-            }
-            Console.WriteLine(count);
-
         }
     }
 }
