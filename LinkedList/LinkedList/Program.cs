@@ -53,8 +53,11 @@ namespace LinkedList
                         linked.Add(70);   //UC6
                         linked.Size();
                         break;
-                    default:
+                    case 7:
+                        linked.Display(); // for display the linked list
                         break;
+                    default:
+                            break;
                 }
                 Console.ReadLine();
         }
